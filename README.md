@@ -21,6 +21,36 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Laravel inizializzazione progetto
+#entrare nella cartella padre
+cd your parent_folder_path
+
+#installare laravel
+composer create-project --prefer-dist laravel/laravel:^9.2 your_project_name_here
+
+#entro dentro la cartella del progetto appena creato
+cd your_project_name
+
+#apri vscode nella path corrente
+code . -r
+
+#eseguo il pacchetto appena scaricato
+php artisan preset: ui bootstrap
+
+#lancio npm install
+npm install 
+
+#installa font-awesome
+npm install --save @fortawesome/fontawesome-free
+
+#aggiungo fontawesome al vite.config.js
+resolve: {
+        alias: {
+            '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
+            '~@fortawesome': path.resolve(__dirname, 'node_modules/@fortawesome'),
+            '~resources': '/resources/'
+        }
+    }
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
